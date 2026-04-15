@@ -949,6 +949,9 @@
   border-left-color: var(--terracotta);
   background: rgba(255, 240, 225, 0.6);
 }
+.prov-grid .prov-card:last-child:nth-child(3n + 1) {
+  grid-column: 2;
+}
 
 /* --- Neuquén slide --- */
 .nqn-hero {
