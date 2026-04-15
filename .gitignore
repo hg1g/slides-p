@@ -1,0 +1,9 @@
+# Archivos sensibles / documentación interna
+planeamiento.jpg
+La Correntosa.png
+docs}/
+RESEARCH.md
+
+# Metadata local
+.claude/
+.DS_Store

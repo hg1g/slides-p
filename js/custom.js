@@ -1,0 +1,17 @@
+Reveal.initialize({
+  hash: true,
+  transition: 'convex',
+  transitionSpeed: 'default',
+  backgroundTransition: 'fade',
+  autoAnimateEasing: 'ease-out',
+  autoAnimateDuration: 0.8,
+  pdfSeparateFragments: false,
+  width: 1920,
+  height: 1080,
+  margin: 0.06,
+  center: true,
+  controls: true,
+  progress: true,
+  slideNumber: 'c/t',
+  mouseWheel: false,
+});
