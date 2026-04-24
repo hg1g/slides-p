@@ -1149,6 +1149,15 @@
 .history-card.highlight-recent .year-stats {
   border-top-color: rgba(196, 114, 58, 0.35);
 }
+.history-card .history-note {
+  font-size: 0.36em !important;
+  line-height: 1.45 !important;
+  color: #888 !important;
+  margin: 0.4em 0 0 0 !important;
+  padding-top: 0.35em;
+  border-top: 1px dashed rgba(0,0,0,0.12);
+  font-style: italic;
+}
 .history-card {
   background: rgba(255, 255, 255, 0.55);
   backdrop-filter: blur(14px) saturate(140%);
@@ -1372,6 +1381,116 @@
   color: #3a3a3a !important;
   margin: 0.4em 0 0 0 !important;
   text-align: left !important;
+}
+
+/* --- Red de articulación ampliada --- */
+.red-ampliada {
+  max-width: 1350px;
+  margin: 0.9em auto 0;
+  text-align: center;
+}
+.red-grupo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3em;
+  margin-bottom: 0.45em;
+}
+.red-cat {
+  font-family: 'Merriweather', serif;
+  font-size: 0.38em;
+  font-weight: 700;
+  color: var(--forest);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-right: 0.4em;
+  min-width: 6em;
+  text-align: right;
+}
+.red-ampliada .pill {
+  font-size: 0.38em;
+  padding: 0.28em 0.65em;
+}
+
+/* --- Entramado: mini logros coleccionables --- */
+.entramado-section {
+  max-width: 1350px;
+  margin: 0.55em auto 0;
+}
+.entramado-cat-label {
+  display: block;
+  font-family: 'Merriweather', serif;
+  font-size: 0.55em;
+  font-weight: 700;
+  color: var(--forest);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.45em;
+  text-align: center;
+}
+.entramado-mini-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55em;
+  justify-content: center;
+}
+.mini-logro {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-left: 4px solid var(--green);
+  border-radius: 12px;
+  padding: 0.7em 1.1em;
+  font-family: 'Merriweather', serif;
+  font-size: 0.55em;
+  font-weight: 700;
+  color: var(--forest);
+  line-height: 1.35;
+  box-shadow: 0 6px 20px rgba(44, 62, 45, 0.1), inset 0 1px 0 rgba(255,255,255,0.8);
+}
+.mini-logro em {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 0.78em;
+  color: #666;
+  font-style: italic;
+  margin-top: 0.15em;
+}
+.mini-logro.lake { border-left-color: var(--lake); }
+.mini-logro.terra { border-left-color: var(--terracotta); }
+
+/* --- Entramado extras (2 pills lado a lado) --- */
+.entramado-extras {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8em;
+  max-width: 1100px;
+  margin: 0.8em auto 0;
+}
+.entramado-extra {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-left: 3px solid var(--green);
+  border-radius: 12px;
+  padding: 0.65em 0.9em;
+  box-shadow: 0 6px 20px rgba(44, 62, 45, 0.08);
+  text-align: left;
+}
+.entramado-extra strong {
+  display: block;
+  font-family: 'Merriweather', serif;
+  font-size: 0.5em;
+  margin-bottom: 0.2em;
+}
+.entramado-extra span {
+  font-size: 0.42em;
+  line-height: 1.5;
+  color: #3a3a3a;
 }
 
 /* --- Club analogy slide --- */
@@ -1720,6 +1839,18 @@
   margin-left: 0.3em;
 }
 
+/* --- Esquema temporal (pedido) --- */
+.timeline-esquema {
+  max-width: 1350px;
+  margin: 0 auto 1.2em;
+  padding: 0;
+}
+.esquema-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* --- Nuestro pedido (glass redesign) --- */
 .pedido-grid {
   display: grid;
@@ -1806,6 +1937,19 @@
   border-radius: 14px;
   font-weight: 600;
   text-align: center;
+}
+
+.pedido-art10 {
+  text-align: center;
+  font-size: 0.48em !important;
+  line-height: 1.55 !important;
+  color: var(--forest) !important;
+  margin: 0.8em auto 0 !important;
+  max-width: 1100px;
+  padding: 0.6em 1em;
+  background: rgba(196, 114, 58, 0.08);
+  border-left: 3px solid var(--terracotta);
+  border-radius: 8px;
 }
 
 .pedido-closing {
@@ -2329,8 +2473,8 @@
 .ideales-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.7em;
-  margin-top: 0.6em;
+  gap: 0.5em;
+  margin-top: 0.5em;
 }
 .ideal-card {
   background: rgba(255, 255, 255, 0.55);
@@ -2338,33 +2482,33 @@
   -webkit-backdrop-filter: blur(14px) saturate(140%);
   border: 1px solid rgba(255, 255, 255, 0.7);
   border-top: 3px solid var(--green);
-  border-radius: 14px;
-  padding: 0.9em 1em 1em;
-  box-shadow: 0 8px 28px rgba(44, 62, 45, 0.1), inset 0 1px 0 rgba(255,255,255,0.8);
+  border-radius: 12px;
+  padding: 0.6em 0.75em 0.7em;
+  box-shadow: 0 6px 24px rgba(44, 62, 45, 0.1), inset 0 1px 0 rgba(255,255,255,0.8);
   text-align: left;
 }
 .ideal-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
   background: linear-gradient(135deg, rgba(74,124,89,0.18), rgba(58,107,140,0.14));
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--forest);
-  margin-bottom: 0.5em;
+  margin-bottom: 0.35em;
 }
-.ideal-icon svg { width: 28px; height: 28px; }
+.ideal-icon svg { width: 20px; height: 20px; }
 .ideal-card h4 {
   font-family: 'Merriweather', serif;
-  font-size: 0.58em;
+  font-size: 0.5em;
   color: var(--forest);
-  margin: 0 0 0.35em 0;
-  line-height: 1.25;
+  margin: 0 0 0.2em 0;
+  line-height: 1.2;
 }
 .ideal-card p {
-  font-size: 0.42em;
-  line-height: 1.5;
+  font-size: 0.36em;
+  line-height: 1.45;
   color: #3a3a3a;
   margin: 0;
   opacity: 0.9;
